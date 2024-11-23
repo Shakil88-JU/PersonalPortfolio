@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title>about page</title>
+    <style>
+        #username
+        {
+            color:blue;
+            font-size: 50 px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1> This is the about page of my first website</h1>
+
+    <div id="profile-info">
+        <p id="username">Username: John Dae</p>
+        <img id="profile-picture" src="c:\Users\DIU\Downloads\unseen-histories-nYs1ngq8R-Y-unsplash.jpg" height="150" width="200" alt="JohnDoe">
+        
+    </div>
+
+    <button onclick="UpdateProfile()">Update Your Profile</button>
+
+    <button onclick="RemoveTag()">Remove Username </button>
+
+    <script>
+        function UpdateProfile()
+        {
+            document.getElementById("username").textContent="Username: John Smith";
+            document.getElementById("profile-picture").src ="johnsmith.jpg";
+    
+            document.getElementById("profile-picture").alt="JohnSmith";
+
+            document.getElementById("username").style.color = "red";
+            
+            const newParagraph = document.createElement("p");
+
+            newParagraph.textContent= "Exaple of creating an Element Dynamically";
+
+            document.getElementById("profile-info").appendChild(newParagraph);
+
+            
+
+
+
+        }
+
+        function RemoveTag()
+        {
+            
+        }
+    </script>
+
+
+
+
+
+
+</body>
+</html>
